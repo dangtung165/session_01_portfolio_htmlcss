@@ -54,3 +54,19 @@
     color: #94a3b8;
     font-size: 0.875rem;
 }
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr; /* Single column */
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
