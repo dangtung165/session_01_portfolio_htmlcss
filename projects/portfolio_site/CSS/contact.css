@@ -110,3 +110,11 @@ textarea {
     box-shadow: 0 14px 30px rgba(37, 99, 235, 0.25);
     background-color: #1d4ed8;
 }
+
+@media screen and (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr; /* Chuyển thành 1 cột */
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+}
