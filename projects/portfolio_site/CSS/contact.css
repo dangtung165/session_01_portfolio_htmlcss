@@ -1,0 +1,126 @@
+.contact-section {
+    padding: 6rem 0 4rem;
+    background-color: var(--color-light); /* Màu nền sáng nhẹ để tách biệt */
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* 2-column layout */
+    gap: 4rem;
+    background-color: #ffffff;
+    padding: 4rem;
+    border-radius: 20px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Form nổi bật lên */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    color: var(--color-text);
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+}
+
+.info-item .icon {
+    font-size: 1.2rem;
+    background: var(--color-light);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+
+/* Base input styles */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+    resize: vertical; /* Cho phép kéo dãn chiều dọc */
+    min-height: 120px;
+}
+
+/* Focus state */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+/* Validation UI Feedback (Chỉ hiện khi đã gõ chữ) */
+.form-group input:not(:placeholder-shown):valid,
+.form-group textarea:not(:placeholder-shown):valid {
+    border-color: #10b981; /* Màu xanh lá khi dữ liệu hợp lệ */
+}
+
+.form-group input:not(:placeholder-shown):invalid,
+.form-group textarea:not(:placeholder-shown):invalid {
+    border-color: #ef4444; /* Màu đỏ khi sai định dạng (ví dụ sai email) */
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.25);
+    background-color: #1d4ed8;
+}
+
+/* ==========================================================================
+   [REFACTOR] Final responsive adjustments (Contact)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr; /* Chuyển thành 1 cột */
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+}
