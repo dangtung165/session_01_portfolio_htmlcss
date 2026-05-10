@@ -55,7 +55,6 @@
     color: var(--color-dark);
 }
 
-/* Base input styles */
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -72,7 +71,6 @@ textarea {
     min-height: 120px;
 }
 
-/* Focus state */
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
@@ -80,7 +78,6 @@ textarea {
     box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
 }
 
-/* Validation UI Feedback (Chỉ hiện khi đã gõ chữ) */
 .form-group input:not(:placeholder-shown):valid,
 .form-group textarea:not(:placeholder-shown):valid {
     border-color: #10b981; /* Màu xanh lá khi dữ liệu hợp lệ */
@@ -112,15 +109,4 @@ textarea {
     transform: translateY(-2px);
     box-shadow: 0 14px 30px rgba(37, 99, 235, 0.25);
     background-color: #1d4ed8;
-}
-
-/* ==========================================================================
-   [REFACTOR] Final responsive adjustments (Contact)
-   ========================================================================== */
-@media screen and (max-width: 768px) {
-    .contact-wrapper {
-        grid-template-columns: 1fr; /* Chuyển thành 1 cột */
-        gap: 2rem;
-        padding: 1.5rem;
-    }
 }
