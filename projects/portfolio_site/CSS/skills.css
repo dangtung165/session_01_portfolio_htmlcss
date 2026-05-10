@@ -82,3 +82,23 @@
 .skill-progress[data-width="80%"].animate {
     width: 80%;
 }
+
+@media screen and (max-width: 768px) {
+    .skills-section {
+        padding: 3rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-item {
+        padding: 1.5rem;
+    }
+}
